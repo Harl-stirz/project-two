@@ -1669,6 +1669,13 @@ body {
 
 }
 
+.send{
+  background-color: purple;
+  padding: 5px;
+  cursor: pointer;
+  width: 20%;
+}
+
 .case-end {
   border-top: 1px solid #333;
   padding-top: 20px;

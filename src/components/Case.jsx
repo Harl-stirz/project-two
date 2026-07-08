@@ -7,14 +7,12 @@ import nexusImage from '../assets/images/nexus.jpeg';
 function Case() {
   const navigate = useNavigate();
   
-  
   const [email, setEmail] = useState('');
 
   const handleViewServices = () => {
     navigate('/services'); 
   };
 
-  
   const handleSubscribe = (e) => {
     e.preventDefault();
     
@@ -23,11 +21,9 @@ function Case() {
       return;
     }
 
-    
     console.log('Submitting newsletter email:', email);
     alert(`Thank you for subscribing with: ${email}`);
     
-
     setEmail('');
   };
 
@@ -118,7 +114,7 @@ function Case() {
         <div className="footer-content">
           <div>
             <h1>RECROOT</h1>
-            <p>The next generation of professional talent acquisition and workplace management</p>
+            <p>The generation of professional talent acquisition and workplace management</p>
           </div>
           <div>
             <h3>PLATFORM</h3>
@@ -136,7 +132,6 @@ function Case() {
             <h3>STAY UPDATED</h3>
             <p>Get the latest updates</p>
             
-            
             <form onSubmit={handleSubscribe} className="newsletter-form">
               <input 
                 type="email" 
@@ -145,7 +140,8 @@ function Case() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               /> 
-              <button type="submit" className='send'>send</button>
+              {/* Replaced 'send' text with '>' while maintaining submit functionality */}
+              <button type="submit" className='send'>&gt;</button>
             </form>
 
             <div className='ws'>
