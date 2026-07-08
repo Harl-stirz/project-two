@@ -14,7 +14,7 @@ function About() {
         <div className="about">
             <div className="ab-hero">
                 <div className="ab-left">
-                    <h5>OUR STORY</h5>
+                   <b> <h5>OUR STORY</h5></b>
                     <h1>Reimagining how the world connects with talent.</h1>
                     <p>
                         Recroot was born from a simple observation; the traditional recruitment
@@ -86,8 +86,8 @@ function About() {
             <div className='explore'>
                 <div className='ex'>
                     <div>
-                        <h5> Why Recroot</h5>
-                        <h2> A recruitment Partner that works as hard as you do</h2>
+                        <b><h5> Why Recroot</h5></b>
+                         A recruitment Partner that works as hard as you do 
                     </div>
                     <button> Explore Our Service</button>
                 </div>
