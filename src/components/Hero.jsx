@@ -1,6 +1,7 @@
 import React from 'react';
 import heroImage from '../assets/images/he.jpg'
 
+
 function Hero() {
     return (
         <div className='Container'>

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-color: white; */
+  background-color: white;
   font-family: Arial, sans-serif;
   font-size: 18px;
   word-spacing: 1.5px;
@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  /* background-color: rgb(243, 243, 243); */
   align-items: center;
   margin: 30px;
   margin-bottom: 20px;
@@ -63,10 +62,11 @@ body {
 }
 
 .left {
-  width: 40%;
+  width: 45%;
  word-spacing: 12px;
  line-height: 50px;
- word-spacing: 1.5;
+ word-spacing: 1.5px;
+ align-items: start;
  
 }
 
@@ -89,8 +89,8 @@ body {
 }
 
 .btn-get-started {
-  padding: 10px;
-  background-color: purple;
+  padding: 12px;
+  background-color: rgb(139, 3, 139);
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -272,8 +272,6 @@ body {
 }
 
 
-
-
 .process-item {
   display: flex;
   flex-direction: column;
@@ -291,6 +289,9 @@ body {
 .opp {
   margin: 20px;
   line-height: 30px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  word-spacing: 1.5px;
 }
 
 
@@ -344,6 +345,7 @@ body {
   width: 100%;
   cursor: pointer;
   border-radius: 15px;
+  
 }
 
 .footer-content {
@@ -361,11 +363,7 @@ body {
   cursor: pointer;
 }
 
-.end {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
+
 .end {
   display: flex;
   align-items: center;
