@@ -1,14 +1,34 @@
 
-import React from 'react';
+import React, { useState } from 'react'; 
 import { useNavigate } from 'react-router-dom';
 import techImage from '../assets/images/tech.jpeg';
 import nexusImage from '../assets/images/nexus.jpeg';
 
 function Case() {
   const navigate = useNavigate();
+  
+  
+  const [email, setEmail] = useState('');
 
   const handleViewServices = () => {
     navigate('/services'); 
+  };
+
+  
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    
+    if (!email) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    
+    console.log('Submitting newsletter email:', email);
+    alert(`Thank you for subscribing with: ${email}`);
+    
+
+    setEmail('');
   };
 
   return (
@@ -23,7 +43,6 @@ function Case() {
 
       <div className="studies">
         <div className="studies-left">
-        
           <div className="studies-a">
             <div className="studies-a-header">
               <div>
@@ -51,7 +70,6 @@ function Case() {
             </div>
           </div>
 
-          
           <div className="studies-b">
             <div className="studies-b1">
               <h3>GreanPath Eco</h3>
@@ -71,7 +89,6 @@ function Case() {
         <div className="studies-right">
           <div className="studies-c">
             <span role="img" aria-label="rocket">🚀</span>
-
             <h3>ScaleUp AI</h3>
             <p>Building the functional AI research team from zero to hero in the heart of Silicon Valley.</p>
             <div className="metrics-tag">2.4x Faster Time-to-Hire</div>
@@ -79,7 +96,6 @@ function Case() {
           </div>
           <div className="studies-d">
             <span className="bank">🏦</span>
-
             <h3>Trust Finance</h3>
             <p>Securing high-compliance talent for digital banking transformations across Europe.</p>
             <div className="tags-container">
@@ -98,7 +114,6 @@ function Case() {
         </button>
       </div>
 
-      
       <footer className="case-footer">
         <div className="footer-content">
           <div>
@@ -120,26 +135,34 @@ function Case() {
           <div>
             <h3>STAY UPDATED</h3>
             <p>Get the latest updates</p>
-            <input type="email" placeholder="Enter your email address" /> <button className='send'>send</button>
-          <div className='ws'>
-                             <div>
-                                <span role="img" aria-label="at">@</span>
+            
+            
+            <form onSubmit={handleSubscribe} className="newsletter-form">
+              <input 
+                type="email" 
+                placeholder="Enter your email address" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              /> 
+              <button type="submit" className='send'>send</button>
+            </form>
 
-                            </div>
-                            <div>
-                                <span className='world'>🌐</span>
-                            </div>
-                            <div>
-                                <span role="img" aria-label="people">👥</span>
-
-
-                            </div>
-                        </div>
+            <div className='ws'>
+              <div>
+                <span role="img" aria-label="at">@</span>
+              </div>
+              <div>
+                <span className='world'>🌐</span>
+              </div>
+              <div>
+                <span role="img" aria-label="people">👥</span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="case-end">
           <p className="copyright">© 2026 Recroot. All rights reserved.</p>
-          
         </div>
       </footer>
     </div>
