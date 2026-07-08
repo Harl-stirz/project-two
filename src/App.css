@@ -508,7 +508,6 @@ b {
   background-color: #0051a8;
 }
 
-/* job page   */
 .job {
   display: flex;
   flex-direction: column;
@@ -517,7 +516,9 @@ b {
 
 
 .head {
-  margin-bottom: 0px;
+  line-height: 50px;
+  padding: 20px;
+  margin-top: 30px;
 
 }
 
