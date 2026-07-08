@@ -28,11 +28,13 @@ body {
 }
 
 .navigation button {
-  padding: 5px;
-  background-color: purple;
+  padding: 15px;
+  background-color: rgb(177, 5, 177);
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow:none;
+
 }
 
 .navigation a:hover {
@@ -123,6 +125,8 @@ body {
   left: 270px;
 }
 
+/* recriute slide */
+
 .recruitement {
   display: flex;
   justify-content: space-between;
@@ -136,6 +140,7 @@ body {
   padding: 50px;
   text-align: center;
   margin-left: 80px;
+  line-height: 40px;
   
 }
 .r-info{
@@ -182,6 +187,8 @@ body {
 
 .recruit h5 {
   color: purple;
+  font-weight: bolder;
+  
 }
 
 .recruit h2 {
@@ -203,10 +210,12 @@ body {
 
 .recruit-header {
 
+ margin: 30px;
   place-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 40px;
 }
 
 .process-item {
@@ -281,6 +290,7 @@ body {
 
 .opp {
   margin: 20px;
+  line-height: 30px;
 }
 
 
@@ -288,6 +298,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .opp-header h1 {
@@ -341,6 +353,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 15px;
+}
+.submit {
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 5px;
 }
 
 .end {

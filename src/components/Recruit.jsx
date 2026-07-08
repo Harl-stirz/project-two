@@ -6,7 +6,7 @@ function Recruit() {
     return (
         <div className='recruit'>
             <div className='recruit-header'>
-                <h5>RECRUITMENT PROCESS</h5>
+               <b><h5>RECRUITMENT PROCESS</h5></b> 
                 <h2>Our Efficient Recruitment Process, outstanding achievements</h2>
                 <p>Smooth process, outstanding achievements. Highlighting the smooth and efficient process from job search to landing a role.</p>
             </div>
