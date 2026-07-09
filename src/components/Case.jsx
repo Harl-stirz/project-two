@@ -140,7 +140,6 @@ function Case() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               /> 
-              {/* Replaced 'send' text with '>' while maintaining submit functionality */}
               <button type="submit" className='send'>&gt;</button>
             </form>
 
