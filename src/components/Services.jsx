@@ -61,7 +61,7 @@ function Services() {
 
                                 </div>
                             </div>
-                        </dicdv>
+                        </div>
 
                     </div>
                     <div className='score-block b'>
