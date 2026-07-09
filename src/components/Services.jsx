@@ -1,8 +1,22 @@
-import React from 'react';
-import { FileUser, User, CircleCheck, Upload, Calendar } from 'lucide-react';
-import coreImage from '../assets/images/core.jpg'
+import React, { useState } from "react";
+import { User, CircleCheck } from "lucide-react";
+import coreImage from "../assets/images/core.jpg";
+
+
 
 function Services() {
+    const [email, setEmail] = useState('');
+
+    const handleSubscribe = () => {
+        if (!email) {
+            alert('Please enter an email address.');
+            return;
+        }
+
+        console.log(`Subscribed with: ${email}`);
+        alert(`Thank you for subscribing with ${email}!`);
+        setEmail('');
+    };
     return (
         <div className="service">
             <div className='s-left'>
@@ -23,7 +37,6 @@ function Services() {
                     <h1> Core Services</h1>
 
                 </div>
-
 
                 <div className='score-grid'>
 
@@ -48,7 +61,7 @@ function Services() {
 
                                 </div>
                             </div>
-                        </div>
+                        </dicdv>
 
                     </div>
                     <div className='score-block b'>
@@ -84,16 +97,16 @@ function Services() {
                 </div>
 
             </div>
-            <div className='app-left-header'>
-                <h3>  Our Tailored Approach  </h3>
-                <p>A standardized process doesnt work for unique talent needs. we combine human empathy with data precision through afour-stage methodology</p>
 
-
-            </div>
 
             <div className='app'>
                 <div className='app-left'>
+                    <div className='app-header'>
+                        <h3>  Our Tailored Approach  </h3>
+                        <p>A standardized process doesnt work for unique talent needs. we combine human empathy with data precision through afour-stage methodology</p>
 
+
+                    </div>
                     <div className='app-left-content'>
                         <div className='appc1'>
 
@@ -130,7 +143,9 @@ function Services() {
                 </div>
 
             </div>
-            <div className='why'>
+
+
+             <div className='why'>
                 <div className='why-header'>
                     <div>
                         <br /><br />
@@ -175,7 +190,7 @@ function Services() {
 
                         <p>Empowering the next generation of talent through technology-first recruitement solutions </p>
                         <div className='w'>
-                             <div>
+                            <div>
                                 <span role="img" aria-label="share">📤</span>
 
                             </div>
@@ -205,7 +220,15 @@ function Services() {
                     <div>
                         <h3>NEWSLETTER</h3>
                         <p>Stay updated with the latest talent trends and platform updates</p>
-                        <input type="email" placeholder="Enter your email address" /> <button className='send'>send</button>
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <button className="submit" onClick={handleSubscribe}>
+                            send
+                        </button>
                     </div>
                 </div>
                 <div className="service-end">
@@ -218,6 +241,8 @@ function Services() {
                 </div>
             </div>
 
+            
+           
         </div>
 
 
