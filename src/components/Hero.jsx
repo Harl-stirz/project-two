@@ -9,7 +9,7 @@ function Hero() {
                 <div className='left'>
                     <button className='btn-ultimate'>ultimate job finder</button>
                     <h1> Find the perfect job that aligns with your passion</h1>
-                    <h5>Recroot brings you closer to your dream job with a platform designed to match your unique talents.</h5>
+                    <p>Recroot brings you closer to your dream job with a platform designed to match your unique talents.</p>
                     <button className='btn-get-started'> Get Started <span className="arrow">→</span> </button>
                 </div>
 

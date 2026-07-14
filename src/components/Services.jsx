@@ -18,6 +18,7 @@ function Services() {
         setEmail('');
     };
     return (
+
         <div className="service">
             <div className='s-left'>
                 <div className='s-header'>
