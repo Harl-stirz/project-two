@@ -8,7 +8,7 @@ function Opp() {
       <div className='opp-header'>
         <h4>TOP OPPORTUNITIES</h4>
       
-        <Link to="/find-a-job"> 
+        <Link to="/find-a-job" > 
           View all <span className="arrow">→</span> 
         </Link>
       </div>

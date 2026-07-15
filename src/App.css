@@ -369,7 +369,7 @@ body {
 }
 
 .opp-header h4{
-  color: purple;
+  /* color: purple; */
   font-size: 30px;
   
 }
@@ -739,7 +739,7 @@ b {
 }
 
 .download {
-  background-color: purple;
+  background-color: #180052;
   color: white;
   border-radius: 10px;
   padding: 20px;
@@ -1137,7 +1137,7 @@ b {
 
 .lan {
   text-align: center;
-  background-color: purple;
+  background-color: #310696;
   color: white;
   border-radius: 15px;
   align-content: center;
@@ -1468,6 +1468,17 @@ body {
   margin: 0 auto;
 }
 
+.case-head h4{
+  font-size: 20px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+.case-head p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+
 /* Studies Layout */
 .studies {
   display: flex;
@@ -1496,6 +1507,7 @@ body {
   padding: 30px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
+
 
 .studies-a-header {
   display: flex;
@@ -1538,9 +1550,10 @@ body {
 
 .studies-atext p {
   color: #4b5563;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
+  font-size: 17px;
+  margin-bottom: 9px;
   line-height: 1.5;
+  word-spacing: 1.5;
 }
 
 .studies-atext a {
@@ -1600,14 +1613,13 @@ body {
 .studies-b2note a {
   color: #a7f3d0;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 17px;
   font-weight: 600;
 }
 
 /* Studies C */
 .studies-c {
   background: #7c3aed;
-  /* Purple Background */
   color: white;
   border-radius: 16px;
   padding: 30px;
@@ -1672,7 +1684,7 @@ body {
   border-radius: 16px;
   padding: 60px 30px;
   text-align: center;
-  margin-top: 40px;
+  margin: 90px;
 }
 
 .ready h1 {
@@ -1806,7 +1818,11 @@ input {
 .s-left {
   flex: 8;
 }
-
+.s-header p {
+font-size: 20px;
+line-height: 1.7;
+word-spacing: 1.5;
+}
 .score-header {
   text-align: center;
   margin: 50px;
@@ -1828,9 +1844,14 @@ input {
 
 .score-block.a {
   background-color: white;
-  height: 280px;
+  height: 290px;
   margin-bottom: 10px;
   width: 68%;
+}
+.score-block.a p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
 }
 
 
@@ -1863,9 +1884,14 @@ input {
 
 .score-block.b {
   width: 450px;
-  height: 280px;
+  height: 290px;
   background-color: rgb(58, 4, 58);
   color: white;
+}
+.score-block.b p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
 }
 
 .score-block a {
@@ -1875,11 +1901,16 @@ input {
 
 .score-block.c {
   width: 450px;
-  height: 280px;
+  height: 290px;
   background-color: rgb(245, 243, 250);
   color: black;
   margin-bottom: 10px;
   padding: 40px;
+}
+.score-block.c p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
 }
 
 .clock {
@@ -1894,9 +1925,14 @@ input {
 .score-block.d {
   width: 30%;
   background-color: white;
-  height: 280px;
+  height: 290px;
   margin-right: 20px;
   width: 54%;
+}
+.score-block.d p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
 }
 
 .score-block.d div {
@@ -1972,7 +2008,15 @@ input {
   margin-bottom: 30px;
   margin-top: 20px;
 }
-
+.app-header p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+.app-header h3{
+  font-size: 30px;
+  line-height: 1.7;
+}
 .app-left {
   flex: 6;
   align-self: start;
@@ -1982,7 +2026,7 @@ input {
 
 .app-right-content {
   flex: 4;
-  margin-top: 500px;
+  margin-top: 550px;
   align-items: center;
 
 }
@@ -2016,6 +2060,16 @@ input {
   margin-bottom: 10px;
 
 }
+.app-left-content p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+.appc1 h3{
+  font-size: 30px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
 
 
 .number-circle {
@@ -2036,6 +2090,17 @@ input {
   text-align: center;
 }
 
+.why-header p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+.why-header h3{
+  font-size: 25px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+  margin: 10px;
+}
 .why {
 
   background-color: white;
@@ -2063,6 +2128,15 @@ input {
 
 .why-content h3 {
   margin: 30px;
+  font-size: 30px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+
+.why-content p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
 }
 
 .team {
@@ -2083,8 +2157,10 @@ input {
 
 .team p {
   margin-bottom: 30px;
-  font-size: 1.1rem;
+  font-size: 19px;
   color: #ddd6fe;
+  line-height: 1.7;
+  word-spacing: 1.5;
 }
 
 .team button {
@@ -2131,7 +2207,14 @@ input {
   margin-bottom: 40px;
 
 }
-
+.recr p{
+  font-size: 19px;
+  line-height: 1.7;
+  word-spacing: 1.5;
+}
+.recr h1{
+  line-height: 1.7;
+}
 .recr div {
   display: flex;
   align-items: center;

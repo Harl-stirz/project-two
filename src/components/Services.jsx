@@ -42,10 +42,11 @@ function Services() {
                 <div className='score-grid'>
 
 
-                    <div className='score-block a'> <div className='bb'>
-                        <span className="star">⭐</span>
-                        <h3>Executive Search</h3>
-                    </div>
+                    <div className='score-block a'>
+                        <div className='bb'>
+                            <span className="star">⭐</span>
+                            <h3>Executive Search</h3>
+                        </div>
                         <p>  Strategic headhunting for C-suite and senior leadership roles. We leverage deep market intelligence and a global network to identify visionaries who can steer your organization toward long-term sucess</p>
                         <div className='sa-core'>
                             <div>
@@ -146,7 +147,7 @@ function Services() {
             </div>
 
 
-             <div className='why'>
+            <div className='why'>
                 <div className='why-header'>
                     <div>
                         <br /><br />
@@ -242,8 +243,8 @@ function Services() {
                 </div>
             </div>
 
-            
-           
+
+
         </div>
 
 
