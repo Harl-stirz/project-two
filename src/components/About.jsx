@@ -14,7 +14,7 @@ function About() {
         <div className="about">
             <div className="ab-hero">
                 <div className="ab-left">
-                   <b> <h5>OUR STORY</h5></b>
+                    <b> <h5>OUR STORY</h5></b>
                     <h1>Reimagining how the world connects with talent.</h1>
                     <p>
                         Recroot was born from a simple observation; the traditional recruitment
@@ -37,12 +37,12 @@ function About() {
             <div className='core'>
                 <div className='core-header'>
                     <h3> Our Core Mission</h3>
-                    We are driven by the belief that everyone observes a career they love and every company deserve the right talent to grow
-
+                    <p> We are driven by the belief that everyone observes a career they love and every company deserve the right talent to grow
+                    </p>
                 </div>
 
                 <div className='core-grid'>
-                    
+
 
 
                     <div className='core-block a'>
@@ -80,22 +80,22 @@ function About() {
                     </div>
 
                 </div>
-        
+
 
             </div>
             <div className='explore'>
                 <div className='ex'>
                     <div>
-                        <b><h5> Why Recroot</h5></b>
-                         A recruitment Partner that works as hard as you do 
+                        <h5> Why Recroot</h5>
+                        A recruitment Partner that works as hard as you do
                     </div>
                     <button> Explore Our Service</button>
                 </div>
                 <div className='explore-card'>
 
                     <div >
-                        
-                         <CircleCheck className='check-icon' size={24} />
+
+                        <CircleCheck className='check-icon' size={24} />
 
                         <h4> Verified Talent</h4>
                         <p>Strict vetting progress to ensure  only the top 3% of talent makes it to your desk</p>
